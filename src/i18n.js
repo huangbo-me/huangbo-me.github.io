@@ -1,11 +1,11 @@
 const zh = {
   name: '黄波',
-  title: '资深前端工程师（跨端架构方向）',
+  title: '资深前端工程师（稳定性/跨端架构方向）',
   company: '滴滴出行',
   location: '北京',
   summary:
     '10 年互联网研发经验，横跨 Android 原生开发与前端 / 跨端工程化领域。近 6 年聚焦滴滴货运司机端，主导跨端架构升级（Hummer → DRN）、稳定性治理体系搭建与工程化效能提升，具备大规模移动应用架构设计、技术选型与团队技术影响力。',
-  email: 'your@email.com',
+  email: 'huangbo.me@email.com',
 
   skillsTitle: '技术栈',
   experienceTitle: '工作经历',
@@ -16,8 +16,8 @@ const zh = {
     { category: '跨端框架', items: 'React Native, DRN (Didi RN), Hummer, JSBridge' },
     { category: '客户端', items: 'Android (Java/Kotlin), iOS (OC/Swift), HarmonyOS' },
     { category: '前端', items: 'React, TypeScript, JavaScript, HTML5, CSS3' },
-    { category: '稳定性', items: 'Crash/卡顿/白屏/JS异常治理, Sentry, APM' },
-    { category: '工程化', items: 'CI/CD, Code Review, AI CR, 自动化插桩, Monorepo' },
+    { category: '稳定性', items: 'Crash/卡顿/白屏/JS异常治理, APM' },
+    { category: '工程化', items: 'CI/CD, Code Review, AI CR, 自动化插桩' },
     { category: 'AI 提效', items: 'DeepSeek, OpenAI, Claude, CR Toolkit' },
   ],
 
@@ -39,7 +39,7 @@ const zh = {
     },
     {
       company: '360',
-      title: '前端工程师',
+      title: '高级研发工程师',
       period: '2019.10 - 2020.10',
       location: '北京',
       desc: null,
@@ -50,23 +50,23 @@ const zh = {
     },
     {
       company: '易车',
-      title: '前端工程师',
+      title: '高级研发工程师',
       period: '2017.02 - 2019.10',
       location: '北京',
       desc: null,
       bullets: [
-        '主导易车主站及 H5 移动页面的技术升级，完成 jQuery 旧项目向 Vue / React 技术栈的渐进式迁移。',
+        '主导易车/车销通项目，移动端页面向flutter迁移页面的技术升级，完成原生向flutter迁移 技术栈的渐进式迁移。',
         '搭建前端构建与自动化部署流水线，参与设计系统建设，统一多端视觉与交互规范。',
       ],
     },
     {
       company: '北京小鸟易达科技发展有限公司',
-      title: 'Android 开发工程师',
+      title: 'Android开发工程师',
       period: '2014.08 - 2017.02',
       location: '北京',
       desc: null,
       bullets: [
-        '负责核心产品 Android 客户端从零到一的架构设计与开发，独立交付多个核心功能模块，累计覆盖百万级用户。',
+        '负责核心产品 Android 客户端从零到一的架构设计与开发，独立交付多个核心功能模块',
       ],
     },
   ],
@@ -87,31 +87,15 @@ const zh = {
   ],
   projectsEmpty: '暂无项目展示',
 
-  school: '北京化工大学',
+  school: '应急管理大学（原华北科技学院）',
   degree: '本科 · 计算机科学与技术',
   gradYear: '2014',
 
   // Navigation
   navResume: '简历',
-  navBlog: '博客',
-  blogBack: '返回博客列表',
 
-  // Blog
-  blog: {
-    title: '技术博客',
-    subtitle: '跨端架构、稳定性治理与工程化提效实践',
-    list: [
-      {
-        slug: 'stability-governance',
-        title: '千万级 DAU 应用的稳定性治理体系建设（从 0 到 1 到规模化）',
-        description:
-          '如何从零搭建一套覆盖事前预防、事中监控、事后复盘的全链路稳定性治理体系？本文基于滴滴货运司机端的真实实践，抽象为可复用的方法论。',
-        date: '2026.04',
-        readTime: '阅读约 15 分钟',
-        tags: ['稳定性治理', '跨端架构', '质量工程'],
-      },
-    ],
-  },
+  // Tags
+  ministryTag: '部属高校',
 
   footer: '保留所有权利',
   switchLang: 'English',
@@ -119,12 +103,12 @@ const zh = {
 
 const en = {
   name: 'Bo Huang',
-  title: 'Senior Frontend Engineer (Cross-Platform Architecture)',
+  title: 'Senior Frontend Engineer (Stability & Cross-Platform Architecture)',
   company: 'Didi Chuxing',
   location: 'Beijing, China',
   summary:
     '10+ years of internet product experience spanning Android native development and cross-platform engineering. 6+ years at Didi Freight leading the driver app cross-platform architecture migration (Hummer → DRN), building a comprehensive stability governance system, and driving engineering efficiency through AI-powered tooling. Experienced in large-scale mobile architecture design and technical leadership.',
-  email: 'your@email.com',
+  email: 'huangbo.me@email.com',
 
   skillsTitle: 'Skills',
   experienceTitle: 'Experience',
@@ -135,8 +119,8 @@ const en = {
     { category: 'Cross-Platform', items: 'React Native, DRN (Didi RN), Hummer, JSBridge' },
     { category: 'Mobile', items: 'Android (Java/Kotlin), iOS (OC/Swift), HarmonyOS' },
     { category: 'Frontend', items: 'React, TypeScript, JavaScript, HTML5, CSS3' },
-    { category: 'Stability', items: 'Crash/ANR/White Screen/JS Exception, Sentry, APM' },
-    { category: 'Engineering', items: 'CI/CD, Code Review, AI CR, Automation, Monorepo' },
+    { category: 'Stability', items: 'Crash/ANR/White Screen/JS Exception, APM' },
+    { category: 'Engineering', items: 'CI/CD, Code Review, AI CR, Automation' },
     { category: 'AI Tools', items: 'DeepSeek, OpenAI, Claude, CR Toolkit' },
   ],
 
@@ -158,7 +142,7 @@ const en = {
     },
     {
       company: '360',
-      title: 'Frontend Engineer',
+      title: 'Senior R&D Engineer',
       period: 'Oct 2019 – Oct 2020',
       location: 'Beijing',
       desc: null,
@@ -169,12 +153,12 @@ const en = {
     },
     {
       company: 'Bitauto',
-      title: 'Frontend Engineer',
+      title: 'Senior R&D Engineer',
       period: 'Feb 2017 – Oct 2019',
       location: 'Beijing',
       desc: null,
       bullets: [
-        'Led technical upgrade of Bitauto main site and H5 mobile pages; incrementally migrated legacy jQuery codebase to Vue/React stack.',
+        'Led Bitauto/CheXiaoTong projects, driving mobile page migration from native to Flutter, completing an incremental migration from native to the Flutter tech stack.',
         'Set up frontend build and automated deployment pipeline; contributed to design system standardization across platforms.',
       ],
     },
@@ -185,7 +169,7 @@ const en = {
       location: 'Beijing',
       desc: null,
       bullets: [
-        'Designed and built the core Android application from scratch, independently delivering multiple feature modules reaching millions of users.',
+        'Designed and built the core Android application from scratch, independently delivering multiple core feature modules.',
       ],
     },
   ],
@@ -206,7 +190,7 @@ const en = {
   ],
   projectsEmpty: 'No projects to show',
 
-  school: 'Beijing University of Chemical Technology',
+  school: 'University of Emergency Management (formerly North China Institute of Science and Technology)',
   degree: 'B.E. in Computer Science and Technology',
   gradYear: '2014',
 
@@ -215,25 +199,9 @@ const en = {
 
   // Navigation
   navResume: 'Resume',
-  navBlog: 'Blog',
-  blogBack: 'Back to blog',
 
-  // Blog
-  blog: {
-    title: 'Tech Blog',
-    subtitle: 'Cross-Platform Architecture, Stability Governance & Engineering Efficiency',
-    list: [
-      {
-        slug: 'stability-governance',
-        title: 'Building a Stability Governance System for 10M+ DAU Apps',
-        description:
-          'How to build a full-stack stability governance system covering prevention, monitoring, and post-mortem. Based on real practices from Didi Freight driver app.',
-        date: 'Apr 2026',
-        readTime: '15 min read',
-        tags: ['Stability', 'Cross-Platform', 'Quality Engineering'],
-      },
-    ],
-  },
+  // Tags
+  ministryTag: 'Ministry-affiliated',
 }
 
 export { zh, en }
