@@ -1,6 +1,6 @@
 import { LangProvider, useLang } from './LangContext'
 import { zh, en } from './i18n'
-import Header from './components/Header'
+import Sidebar from './components/Header'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
@@ -12,25 +12,28 @@ function AppContent() {
   const t = lang === 'zh' ? zh : en
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Language toggle */}
-      <div className="lang-toggle fixed top-5 right-5 z-50">
-        <button
-          onClick={toggleLang}
-          className="px-3 py-1.5 text-xs font-medium rounded-full border border-apple-border bg-white/80 text-apple-tertiary hover:text-apple-text hover:border-apple-text/20 transition-all cursor-pointer backdrop-blur-sm"
-        >
-          {t.switchLang}
-        </button>
-      </div>
+    <div className="min-h-screen bg-bg text-text">
+      <Sidebar t={t} toggleLang={toggleLang} />
 
-      <Header t={t} />
-      <Skills t={t} />
-      <Experience t={t} />
-      <Projects t={t} />
-      <Education t={t} />
-      <footer className="py-10 px-6 text-center text-xs text-apple-tertiary">
-        © {new Date().getFullYear()} {t.name} · {t.footer}
-      </footer>
+      <main className="md:ml-[260px] pt-[57px] md:pt-0">
+        {/* Summary */}
+        <section className="px-10 py-12 border-b border-border">
+          <div className="space-y-1 max-w-2xl">
+            {t.summary.split('\n').map((line, i) => (
+              <p key={i} className="text-sm text-secondary leading-relaxed">{line}</p>
+            ))}
+          </div>
+        </section>
+
+        <Skills t={t} />
+        <Experience t={t} />
+        <Projects t={t} />
+        <Education t={t} />
+
+        <footer className="px-10 py-8 border-t border-border text-xs text-muted">
+          © {new Date().getFullYear()} {t.name} · {t.footer}
+        </footer>
+      </main>
     </div>
   )
 }

@@ -3,8 +3,7 @@ const zh = {
   title: '资深前端工程师（稳定性/跨端架构方向）',
   company: '滴滴出行',
   location: '北京',
-  summary:
-    '10 年互联网研发经验，横跨 Android 原生开发与前端 / 跨端工程化领域。近 6 年聚焦滴滴货运司机端，主导跨端架构升级（Hummer → DRN）、稳定性治理体系搭建与工程化效能提升，具备大规模移动应用架构设计、技术选型与团队技术影响力。',
+  summary: '10 年互联网研发经验，横跨 Android 原生与跨端工程化领域。\n近 6 年聚焦滴滴货运司机端，主导跨端架构升级、稳定性治理与 AI 提效工具研发。',
   email: 'huangbo.me@gmail.com',
 
   skillsTitle: '技术栈',
@@ -24,17 +23,58 @@ const zh = {
   experience: [
     {
       company: '滴滴出行',
-      title: '资深前端工程师（跨端架构方向）',
+      title: '资深前端工程师（稳定性/跨端架构方向）',
       period: '2020.10 - 至今',
       location: '北京',
       desc: '滴滴货运 · 司机端跨端架构 & 稳定性治理负责人',
       bullets: [
-        '主导司机端从自研跨端框架 Hummer 迁移至 DRN（Didi React Native），覆盖 Android / iOS / HarmonyOS 三端，统一 UI 渲染层与业务逻辑层；设计白名单→分城市→分阶段灰度放量策略，推动自测 + Bug Hunter + 集成回归机制，大幅降低多端维护成本，提升核心业务迭代效率。',
-        '搭建事前-事中-事后闭环的稳定性治理体系：事前（发版 Checklist / CR 机制 / 稳定分）、事中（Crash / 卡顿 / 白屏 / JS 异常 / 灰度监控）、事后（事故复盘 / TODO 跟进 / 线上归因）。成果：Crash 率 2% → 4‰，卡顿率 3% → 9‰，JS 异常从千万级治理至可监控可召回；Checklist 拦截司机端问题 20+、货主端问题 200+，主动上报问题 29 个。',
-        '自研司机端白屏监控 SDK，支持页面级白屏识别与灰度维度聚合，覆盖 Native / H5 / DRN 混合场景；成功召回域名异常、H5 图片加载慢、页面配置错误等多类线上问题，推动白屏从"不可见"转变为可监控、可定位、可复盘。',
-        '基于 DeepSeek / OpenAI / Claude 多模型构建 AI Code Review 工具 cr-toolkit，支持智能分段、并行分析、分支对比与自动生成 CR 建议。落地后有效审查代码 8140 行，百行代码平均合入时间从 51.6 分钟降至 1.8 分钟（提升 28.7 倍），Commit 规范率从 44.25% 提升至 96.88%。',
-        '优化大厅滑动切换与爆单场景选单体验，选单效率提升 9.36s；推进拼单策略优化，日均打包规模 1.5 万单，单均做单时间节省 2.24 分钟，IPH 提升 2.6 元，拼成质量提升 23%。',
-        '参与司机端应用上架合规整改与信息安全治理，修复接口水平越权、跨境域名、敏感字段、权限过度等安全隐患 30+ 项，获滴滴大安全委员会"守护者"提名。',
+        {
+          title: '跨端架构迁移：Hummer → DRN',
+          items: [
+            '覆盖 Android / iOS / HarmonyOS 三端，统一 UI 渲染层与业务逻辑层',
+            '分阶段灰度策略：白名单 → 分城市 → 全量放量',
+            '推动自测 + Bug Hunter + 集成回归机制，大幅降低多端维护成本',
+          ],
+        },
+        {
+          title: '稳定性治理：事前-事中-事后闭环体系',
+          items: [
+            '事前：发版 Checklist / CR 机制 / 稳定分',
+            '事中：Crash / 卡顿 / 白屏 / JS 异常 / 灰度监控',
+            '事后：事故复盘 / TODO 跟进 / 线上归因',
+            'Crash 率 2% → 4‰，卡顿率 3% → 9‰；Checklist 拦截问题 200+，主动上报 29 个',
+          ],
+        },
+        {
+          title: '白屏监控 SDK 自研',
+          items: [
+            '支持 Native / H5 / DRN 混合场景的页面级白屏识别与灰度聚合',
+            '成功召回域名异常、H5 图片加载慢、页面配置错误等多类线上问题',
+            '推动白屏从"不可见"变为可监控、可定位、可复盘',
+          ],
+        },
+        {
+          title: 'AI Code Review 工具 cr-toolkit',
+          items: [
+            '集成 DeepSeek / OpenAI / Claude 多模型，支持智能分段与并行分析',
+            '有效审查代码 8140 行，百行合入时间 51.6 min → 1.8 min（↑28.7x）',
+            'Commit 规范率 44.25% → 96.88%',
+          ],
+        },
+        {
+          title: '业务体验优化',
+          items: [
+            '大厅滑动切换与爆单选单优化，选单效率提升 9.36s',
+            '拼单策略优化：日均 1.5 万单，单均节省 2.24 min，IPH ↑2.6 元，拼成质量 ↑23%',
+          ],
+        },
+        {
+          title: '合规整改与信息安全治理',
+          items: [
+            '修复接口越权、跨境域名、敏感字段、权限过度等安全隐患 30+ 项',
+            '获滴滴大安全委员会"守护者"提名',
+          ],
+        },
       ],
     },
     {
@@ -44,8 +84,13 @@ const zh = {
       location: '北京',
       desc: null,
       bullets: [
-        '负责 360 安全浏览器核心前端功能开发，主导 PC 端能力向 Web 端技术迁移，提升功能迭代效率。',
-        '推动页面加载性能优化，首屏渲染时间缩短 40%，与产品 / 设计团队协作推进多端体验统一。',
+        {
+          title: '360 安全浏览器前端开发',
+          items: [
+            '主导 PC 端能力向 Web 端迁移，提升功能迭代效率',
+            '首屏渲染时间缩短 40%，推进多端体验统一',
+          ],
+        },
       ],
     },
     {
@@ -55,18 +100,28 @@ const zh = {
       location: '北京',
       desc: null,
       bullets: [
-        '主导易车/车销通项目，移动端页面向flutter迁移页面的技术升级，完成原生向flutter迁移 技术栈的渐进式迁移。',
-        '搭建前端构建与自动化部署流水线，参与设计系统建设，统一多端视觉与交互规范。',
+        {
+          title: '移动端技术升级：Native → Flutter',
+          items: [
+            '主导易车 / 车销通移动端页面渐进式迁移至 Flutter',
+            '搭建前端构建与自动化部署流水线，统一多端视觉与交互规范',
+          ],
+        },
       ],
     },
     {
       company: '北京小鸟易达科技发展有限公司',
-      title: 'Android开发工程师',
+      title: 'Android 开发工程师',
       period: '2014.08 - 2017.02',
       location: '北京',
       desc: null,
       bullets: [
-        '负责核心产品 Android 客户端从零到一的架构设计与开发，独立交付多个核心功能模块',
+        {
+          title: 'Android 客户端从零到一',
+          items: [
+            '负责核心产品架构设计与开发，独立交付多个核心功能模块',
+          ],
+        },
       ],
     },
   ],
@@ -91,12 +146,8 @@ const zh = {
   degree: '本科 · 计算机科学与技术',
   gradYear: '2014',
 
-  // Navigation
   navResume: '简历',
-
-  // Tags
   ministryTag: '部属高校',
-
   footer: '保留所有权利',
   switchLang: 'English',
 }
@@ -106,8 +157,7 @@ const en = {
   title: 'Senior Frontend Engineer (Stability & Cross-Platform Architecture)',
   company: 'Didi Chuxing',
   location: 'Beijing, China',
-  summary:
-    '10+ years of internet product experience spanning Android native development and cross-platform engineering. 6+ years at Didi Freight leading the driver app cross-platform architecture migration (Hummer → DRN), building a comprehensive stability governance system, and driving engineering efficiency through AI-powered tooling. Experienced in large-scale mobile architecture design and technical leadership.',
+  summary: '10+ years spanning Android native and cross-platform engineering.\n6+ years at Didi Freight leading architecture migration, stability governance, and AI-powered developer tooling.',
   email: 'huangbo.me@email.com',
 
   skillsTitle: 'Skills',
@@ -127,17 +177,58 @@ const en = {
   experience: [
     {
       company: 'Didi Chuxing',
-      title: 'Senior Frontend Engineer (Cross-Platform Architecture)',
+      title: 'Senior Frontend Engineer (Stability & Cross-Platform Architecture)',
       period: 'Oct 2020 – Present',
       location: 'Beijing',
       desc: 'Didi Freight · Driver App Cross-Platform & Stability Lead',
       bullets: [
-        'Led migration from in-house framework Hummer to DRN (Didi React Native) across Android/iOS/HarmonyOS, unifying UI rendering and business logic layers; designed phased grayscale rollout strategy (whitelist → city → staged), established self-testing, Bug Hunter, and integration regression mechanisms, significantly reducing multi-platform maintenance costs.',
-        'Built a闭环 stability governance system: pre-release (checklist/CR/score), real-time (Crash/ANR/white-screen/JS exception/gray monitoring), and post-mortem (retro/TTO tracking/root cause analysis). Achievements: Crash rate 2% → 0.4%, ANR rate 3% → 0.9%, JS exceptions from tens of millions to monitorable/recallable; checklist intercepted 20+ driver-side and 200+ shipper-side issues, 29 proactive escalations.',
-        'Developed a white-screen monitoring SDK with page-level detection and grayscale aggregation, covering Native/H5/DRN hybrid scenarios; surfaced domain anomalies, slow H5 image loading, and page config errors, transforming white-screen from invisible to monitorable and diagnosable.',
-        'Built cr-toolkit AI Code Review tool powered by DeepSeek/OpenAI/Claude, supporting intelligent diff segmentation, parallel analysis, branch comparison, and auto-generated CR suggestions. Results: 8,140 lines effectively reviewed, avg merge time per 100 lines reduced from 51.6 min to 1.8 min (28.7x improvement), commit standardization rate from 44.25% to 96.88%.',
-        'Optimized hall list swipe interaction and surge-scenario order selection, reducing selection time by 9.36s; improved pooling strategy with 15K daily orders, saving 2.24 min per order, increasing IPH by ¥2.6, and improving pooling quality by 23%.',
-        'Led app compliance remediation and information security hardening, fixing 30+ vulnerabilities including horizontal privilege escalation, cross-border domains, sensitive fields, and over-permission issues; nominated for Didi Security Committee "Guardian" award.',
+        {
+          title: 'Cross-Platform Migration: Hummer → DRN',
+          items: [
+            'Unified UI rendering and business logic across Android / iOS / HarmonyOS',
+            'Phased grayscale rollout: whitelist → city-level → full release',
+            'Established self-testing, Bug Hunter & regression mechanisms; reduced multi-platform maintenance cost',
+          ],
+        },
+        {
+          title: 'Stability Governance: End-to-End Loop',
+          items: [
+            'Pre-release: release checklist, CR process, stability score',
+            'Real-time: Crash / ANR / white-screen / JS exception / gray monitoring',
+            'Post-mortem: retrospective, TODO tracking, root-cause analysis',
+            'Crash rate 2% → 0.4%, ANR 3% → 0.9%; checklist intercepted 200+ issues, 29 proactive escalations',
+          ],
+        },
+        {
+          title: 'White-Screen Monitoring SDK',
+          items: [
+            'Page-level white-screen detection with grayscale aggregation across Native / H5 / DRN',
+            'Surfaced domain anomalies, slow image loading, and page config errors',
+            'Transformed white-screen from invisible to monitorable, diagnosable, and reviewable',
+          ],
+        },
+        {
+          title: 'AI Code Review Tool: cr-toolkit',
+          items: [
+            'Multi-model integration (DeepSeek / OpenAI / Claude) with parallel diff analysis',
+            '8,140 lines reviewed; merge time per 100 lines: 51.6 min → 1.8 min (28.7x faster)',
+            'Commit standardization rate: 44.25% → 96.88%',
+          ],
+        },
+        {
+          title: 'Business Experience Optimization',
+          items: [
+            'Hall list swipe & surge order selection: reduced selection time by 9.36s',
+            'Pooling strategy: 15K daily orders, –2.24 min per order, IPH +¥2.6, quality +23%',
+          ],
+        },
+        {
+          title: 'Compliance & Security Hardening',
+          items: [
+            'Fixed 30+ vulnerabilities: privilege escalation, cross-border domains, sensitive fields, over-permission',
+            'Nominated for Didi Security Committee "Guardian" award',
+          ],
+        },
       ],
     },
     {
@@ -147,8 +238,13 @@ const en = {
       location: 'Beijing',
       desc: null,
       bullets: [
-        'Developed core frontend features for 360 Secure Browser; led PC-to-Web technology migration accelerating feature iteration.',
-        'Optimized page loading performance, reducing above-the-fold render time by 40%; collaborated with product and design teams on multi-platform UX consistency.',
+        {
+          title: '360 Secure Browser Frontend',
+          items: [
+            'Led PC-to-Web technology migration, accelerating feature iteration',
+            'Reduced above-the-fold render time by 40%; drove multi-platform UX consistency',
+          ],
+        },
       ],
     },
     {
@@ -158,8 +254,13 @@ const en = {
       location: 'Beijing',
       desc: null,
       bullets: [
-        'Led Bitauto/CheXiaoTong projects, driving mobile page migration from native to Flutter, completing an incremental migration from native to the Flutter tech stack.',
-        'Set up frontend build and automated deployment pipeline; contributed to design system standardization across platforms.',
+        {
+          title: 'Mobile Tech Upgrade: Native → Flutter',
+          items: [
+            'Led incremental migration of Bitauto / CheXiaoTong mobile pages to Flutter',
+            'Built frontend CI/CD pipeline; standardized visual and interaction specs across platforms',
+          ],
+        },
       ],
     },
     {
@@ -169,7 +270,12 @@ const en = {
       location: 'Beijing',
       desc: null,
       bullets: [
-        'Designed and built the core Android application from scratch, independently delivering multiple core feature modules.',
+        {
+          title: 'Android App from Scratch',
+          items: [
+            'Architected and built the core Android application, delivering multiple key modules independently',
+          ],
+        },
       ],
     },
   ],
@@ -196,11 +302,7 @@ const en = {
 
   footer: 'All rights reserved',
   switchLang: '中文',
-
-  // Navigation
   navResume: 'Resume',
-
-  // Tags
   ministryTag: 'Ministry-affiliated',
 }
 
