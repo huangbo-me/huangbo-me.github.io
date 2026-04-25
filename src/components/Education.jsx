@@ -1,16 +1,14 @@
-export default function Education() {
+export default function Education({ t }) {
   return (
     <section id="education" className="py-10 px-6 border-t border-gray-200">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t.educationTitle}</h2>
         <div>
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <span className="font-medium text-gray-900">
-              Bachelor of Engineering, Computer Science
-            </span>
-            <span className="text-sm text-gray-500">2016</span>
+            <span className="font-medium text-gray-900">{t.degree}</span>
+            <span className="text-sm text-gray-500">{t.gradYear}</span>
           </div>
-          <p className="text-sm text-gray-600 mt-0.5">University Name</p>
+          <p className="text-sm text-gray-600 mt-0.5">{t.school}</p>
         </div>
       </div>
     </section>
