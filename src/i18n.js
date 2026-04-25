@@ -5,7 +5,7 @@ const zh = {
   location: '北京',
   summary:
     '10 年互联网研发经验，横跨 Android 原生开发与前端 / 跨端工程化领域。近 6 年聚焦滴滴货运司机端，主导跨端架构升级（Hummer → DRN）、稳定性治理体系搭建与工程化效能提升，具备大规模移动应用架构设计、技术选型与团队技术影响力。',
-  email: 'huangbo.me@email.com',
+  email: 'huangbo.me@gmail.com',
 
   skillsTitle: '技术栈',
   experienceTitle: '工作经历',
