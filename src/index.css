@@ -54,7 +54,7 @@
 }
 
 html {
-  font-family: "Hack Nerd Font", "JetBrains Mono", "Fira Code", "SF Mono", "Menlo", "Monaco", "Courier New", monospace;
+  font-family: "Berkeley Mono", "Berkeley Mono Variable", "Claude Code", "SF Mono", "JetBrains Mono", "Menlo", "Monaco", "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
