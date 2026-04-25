@@ -14,7 +14,7 @@ function AppContent() {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-800">
       {/* Language toggle */}
-      <div className="fixed top-4 right-4 z-50">
+      <div className="lang-toggle fixed top-4 right-4 z-50">
         <button
           onClick={toggleLang}
           className="px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors shadow-sm cursor-pointer"
