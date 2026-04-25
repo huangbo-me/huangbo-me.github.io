@@ -91,6 +91,28 @@ const zh = {
   degree: '本科 · 计算机科学与技术',
   gradYear: '2014',
 
+  // Navigation
+  navResume: '简历',
+  navBlog: '博客',
+  blogBack: '返回博客列表',
+
+  // Blog
+  blog: {
+    title: '技术博客',
+    subtitle: '跨端架构、稳定性治理与工程化提效实践',
+    list: [
+      {
+        slug: 'stability-governance',
+        title: '千万级 DAU 应用的稳定性治理体系建设（从 0 到 1 到规模化）',
+        description:
+          '如何从零搭建一套覆盖事前预防、事中监控、事后复盘的全链路稳定性治理体系？本文基于滴滴货运司机端的真实实践，抽象为可复用的方法论。',
+        date: '2026.04',
+        readTime: '阅读约 15 分钟',
+        tags: ['稳定性治理', '跨端架构', '质量工程'],
+      },
+    ],
+  },
+
   footer: '保留所有权利',
   switchLang: 'English',
 }
@@ -190,6 +212,28 @@ const en = {
 
   footer: 'All rights reserved',
   switchLang: '中文',
+
+  // Navigation
+  navResume: 'Resume',
+  navBlog: 'Blog',
+  blogBack: 'Back to blog',
+
+  // Blog
+  blog: {
+    title: 'Tech Blog',
+    subtitle: 'Cross-Platform Architecture, Stability Governance & Engineering Efficiency',
+    list: [
+      {
+        slug: 'stability-governance',
+        title: 'Building a Stability Governance System for 10M+ DAU Apps',
+        description:
+          'How to build a full-stack stability governance system covering prevention, monitoring, and post-mortem. Based on real practices from Didi Freight driver app.',
+        date: 'Apr 2026',
+        readTime: '15 min read',
+        tags: ['Stability', 'Cross-Platform', 'Quality Engineering'],
+      },
+    ],
+  },
 }
 
 export { zh, en }
