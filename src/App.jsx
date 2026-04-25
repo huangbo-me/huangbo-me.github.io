@@ -12,25 +12,23 @@ function AppContent() {
   const t = lang === 'zh' ? zh : en
 
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-800">
+    <div className="min-h-screen bg-white">
       {/* Language toggle */}
-      <div className="lang-toggle fixed top-4 right-4 z-50">
+      <div className="lang-toggle fixed top-5 right-5 z-50">
         <button
           onClick={toggleLang}
-          className="px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 transition-colors shadow-sm cursor-pointer"
+          className="px-3 py-1.5 text-xs font-medium rounded-full border border-apple-border bg-white/80 text-apple-tertiary hover:text-apple-text hover:border-apple-text/20 transition-all cursor-pointer backdrop-blur-sm"
         >
           {t.switchLang}
         </button>
       </div>
 
       <Header t={t} />
-      <main>
-        <Skills t={t} />
-        <Experience t={t} />
-        <Projects t={t} />
-        <Education t={t} />
-      </main>
-      <footer className="py-6 px-6 border-t border-gray-200 text-center text-sm text-gray-400">
+      <Skills t={t} />
+      <Experience t={t} />
+      <Projects t={t} />
+      <Education t={t} />
+      <footer className="py-10 px-6 text-center text-xs text-apple-tertiary">
         © {new Date().getFullYear()} {t.name} · {t.footer}
       </footer>
     </div>

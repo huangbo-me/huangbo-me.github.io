@@ -1,26 +1,33 @@
 export default function Header({ t }) {
   return (
-    <header className="bg-gray-900 text-white py-12 px-6">
+    <header className="py-20 sm:py-28 px-6">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold tracking-tight">{t.name}</h1>
-        <p className="mt-2 text-xl text-gray-300">
-          {t.title} @ {t.company}
+        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-apple-text">
+          {t.name}
+        </h1>
+        <p className="mt-3 text-xl text-apple-secondary font-light">
+          {t.title}
         </p>
-        <p className="mt-1 text-gray-400">{t.location}</p>
-        <p className="mt-4 text-gray-300 max-w-2xl leading-relaxed">
+        <div className="mt-2 text-sm text-apple-tertiary">
+          {t.location}
+        </div>
+        <p className="mt-6 text-base text-apple-secondary leading-relaxed max-w-2xl">
           {t.summary}
         </p>
-        <div className="mt-5 flex flex-wrap gap-4 text-sm">
-          <a href={`mailto:${t.email}`} className="text-blue-400 hover:text-blue-300">
+        <div className="mt-6 flex flex-wrap gap-x-5 gap-y-1 text-sm">
+          <a
+            href={`mailto:${t.email}`}
+            className="text-apple-accent hover:underline decoration-apple-accent/30 underline-offset-2"
+          >
             {t.email}
           </a>
           <a
             href="https://github.com/huangbo-me"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-400 hover:text-blue-300"
+            className="text-apple-accent hover:underline decoration-apple-accent/30 underline-offset-2"
           >
-            github.com/huangbo-me
+            GitHub
           </a>
         </div>
       </div>
