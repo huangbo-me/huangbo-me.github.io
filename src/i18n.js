@@ -12,12 +12,12 @@ const zh = {
   educationTitle: '教育背景',
 
   skills: [
-    { category: '跨端框架', items: 'React Native, DRN (Didi RN), Hummer, JSBridge' },
-    { category: '客户端', items: 'Android (Java/Kotlin), iOS (OC/Swift), HarmonyOS' },
-    { category: '前端', items: 'React, TypeScript, JavaScript, HTML5, CSS3' },
-    { category: '稳定性', items: 'Crash/卡顿/白屏/JS异常治理, APM' },
-    { category: '工程化', items: 'CI/CD, Code Review, AI CR, 自动化插桩' },
-    { category: 'AI 提效', items: 'DeepSeek, OpenAI, Claude, CR Toolkit' },
+    { category: '跨端框架', items: ['React Native', 'DRN (Didi RN)', 'Hummer', 'JSBridge'] },
+    { category: '客户端', items: ['Android (Java/Kotlin)', 'iOS (OC/Swift)', 'HarmonyOS'] },
+    { category: '前端', items: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'] },
+    { category: '稳定性', items: ['Crash 治理', '卡顿治理', '白屏监控', 'JS 异常', 'APM'] },
+    { category: '工程化', items: ['CI/CD', 'Code Review', 'AI CR', '自动化插桩'] },
+    { category: 'AI 提效', items: ['DeepSeek', 'OpenAI', 'Claude', 'CR Toolkit'] },
   ],
 
   experience: [
@@ -166,12 +166,12 @@ const en = {
   educationTitle: 'Education',
 
   skills: [
-    { category: 'Cross-Platform', items: 'React Native, DRN (Didi RN), Hummer, JSBridge' },
-    { category: 'Mobile', items: 'Android (Java/Kotlin), iOS (OC/Swift), HarmonyOS' },
-    { category: 'Frontend', items: 'React, TypeScript, JavaScript, HTML5, CSS3' },
-    { category: 'Stability', items: 'Crash/ANR/White Screen/JS Exception, APM' },
-    { category: 'Engineering', items: 'CI/CD, Code Review, AI CR, Automation' },
-    { category: 'AI Tools', items: 'DeepSeek, OpenAI, Claude, CR Toolkit' },
+    { category: 'Cross-Platform', items: ['React Native', 'DRN (Didi RN)', 'Hummer', 'JSBridge'] },
+    { category: 'Mobile', items: ['Android (Java/Kotlin)', 'iOS (OC/Swift)', 'HarmonyOS'] },
+    { category: 'Frontend', items: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'] },
+    { category: 'Stability', items: ['Crash', 'ANR', 'White Screen', 'JS Exception', 'APM'] },
+    { category: 'Engineering', items: ['CI/CD', 'Code Review', 'AI CR', 'Automation'] },
+    { category: 'AI Tools', items: ['DeepSeek', 'OpenAI', 'Claude', 'CR Toolkit'] },
   ],
 
   experience: [

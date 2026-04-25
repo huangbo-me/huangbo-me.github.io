@@ -1,7 +1,7 @@
 export default function Projects({ t }) {
   return (
     <section id="projects" className="px-10 py-12 border-b border-border">
-      <h2 className="text-xs font-medium uppercase tracking-widest text-muted mb-8">
+      <h2 className="text-2xl font-bold text-text mb-8">
         {t.projectsTitle}
       </h2>
       {t.projects.length === 0 ? (
@@ -14,13 +14,13 @@ export default function Projects({ t }) {
                 href={p.url}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-medium text-accent hover:text-text transition-colors"
+                className="text-base font-semibold text-accent hover:text-text transition-colors"
               >
                 {p.name}
-                <span className="ml-1 text-muted text-xs">↗</span>
+                <span className="ml-1 text-muted text-sm">↗</span>
               </a>
-              <p className="mt-2 text-xs text-secondary leading-relaxed">{p.desc}</p>
-              <p className="mt-1.5 text-xs text-muted">{p.stack}</p>
+              <p className="mt-2 text-sm text-secondary leading-relaxed">{p.desc}</p>
+              <p className="mt-1.5 text-sm text-muted">{p.stack}</p>
             </div>
           ))}
         </div>
